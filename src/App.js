@@ -4,7 +4,6 @@ import Portfolio from "./components/Portfolio/portfolio";
 import Calculator from "./images/calculatorpreview.PNG";
 import NoteApp from "./images/noteapppreview.PNG";
 import TicTacToe from "./images/tictactoe-project.PNG";
-import TodoList from "./images/calculatorpreview.PNG";
 import WeatherApp from "./images/WeatherPreview.PNG";
 import MusicApp from "./images/MusicPreview.PNG";
 
