@@ -8,7 +8,7 @@ const portfolio = props => {
 
 return(
     <div className="web">
-      <Navigation></Navigation>
+      <Navigation/>
       <HeroImage></HeroImage>
       <Content>
       <div className='content'>

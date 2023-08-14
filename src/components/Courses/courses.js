@@ -23,6 +23,9 @@ const courses = props => {
         case 'NoteApp':
           window.location.href = 'https://github.com/Angel2001-programmer/NoteAppReactJS';
           break;
+          default:
+            console.log('Not Found');
+            break;
     }
   }
 

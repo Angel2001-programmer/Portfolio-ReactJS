@@ -1,0 +1,75 @@
+.web{
+    background-color: #292e36;
+  }
+
+  body{
+    margin-right: 800px;
+    margin-left: 800px;
+    background-color: #20242b;
+  }
+
+  .container{
+    background-color: rgb(231, 231, 231);
+    padding: 15px;
+    border-radius: 12px;
+    min-height: 300px;
+  }
+
+  p{
+    font-size: 18px;
+  }
+
+  h2{
+    color: black;
+  }
+
+  div{
+    color: black;
+  }
+
+  .container h1{
+    display: flex;
+    justify-content: center;
+    color: black;
+  }
+
+  label{
+    color: black;
+    padding: 2px;
+  }
+
+  input{
+    padding: 5px;
+    color: black;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  textarea{
+    resize: vertical;
+    max-height: 380px;
+    color: black;
+  }
+
+  button{
+    margin: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(207, 50, 50);
+    border-color: rgb(192, 9, 9);
+    font-size: 20px;
+  }
+
+  .buttonDiv{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  button:active{
+    background-color:rgb(192, 9, 9);
+  }

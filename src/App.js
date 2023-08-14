@@ -6,7 +6,6 @@ import NoteApp from "./images/noteapppreview.PNG";
 import TicTacToe from "./images/tictactoe-project.PNG";
 import WeatherApp from "./images/WeatherPreview.PNG";
 import MusicApp from "./images/MusicPreview.PNG";
-
 import { Fragment } from "react";
 
 function App() {
@@ -132,7 +131,7 @@ function App() {
 
   return (
     <Fragment>
-      <Modal/>
+      {/* <Modal/> */}
       <Portfolio 
       data={data} 
       projects={projects} 
