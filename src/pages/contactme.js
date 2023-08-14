@@ -21,7 +21,7 @@ const ContactMe = () => {
 
     const SumbitHandler = (e) => {
         e.preventDefault();
-        if(enquiry.name && enquiry.email && enquiry.message != ''){
+        if(enquiry.name && enquiry.email && enquiry.message !== ''){
             alert(`Thank you ${enquiry.name} for your submission`);
             setEnquiry({name: '', email: '', message: ''});
         }
