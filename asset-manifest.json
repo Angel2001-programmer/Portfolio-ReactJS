@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-ReactJS/static/css/main.b1f8e469.css",
-    "main.js": "/Portfolio-ReactJS/static/js/main.59b45530.js",
+    "main.css": "/Portfolio-ReactJS/static/css/main.559bd8fd.css",
+    "main.js": "/Portfolio-ReactJS/static/js/main.76afe680.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio-ReactJS/static/js/787.1ed0c42c.chunk.js",
     "static/media/WeatherPreview.PNG": "/Portfolio-ReactJS/static/media/WeatherPreview.770966b4b9204ad81399.PNG",
     "static/media/image.svg": "/Portfolio-ReactJS/static/media/image.33710759adce9bb9bc26.svg",
@@ -10,12 +10,12 @@
     "static/media/tictactoe-project.PNG": "/Portfolio-ReactJS/static/media/tictactoe-project.263e6e84f8327cbfa0c3.PNG",
     "static/media/noteapppreview.PNG": "/Portfolio-ReactJS/static/media/noteapppreview.06c7a8ff25b708a2d182.PNG",
     "index.html": "/Portfolio-ReactJS/index.html",
-    "main.b1f8e469.css.map": "/Portfolio-ReactJS/static/css/main.b1f8e469.css.map",
-    "main.59b45530.js.map": "/Portfolio-ReactJS/static/js/main.59b45530.js.map",
+    "main.559bd8fd.css.map": "/Portfolio-ReactJS/static/css/main.559bd8fd.css.map",
+    "main.76afe680.js.map": "/Portfolio-ReactJS/static/js/main.76afe680.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio-ReactJS/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1f8e469.css",
-    "static/js/main.59b45530.js"
+    "static/css/main.559bd8fd.css",
+    "static/js/main.76afe680.js"
   ]
 }
