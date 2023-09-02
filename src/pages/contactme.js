@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Navigation from '../components/Navigation/navigation';
-import "./contactme.css"
+import styles from "./contactme.module.css"
 
 const ContactMe = () => {
     const [enquiry, setEnquiry] = useState({name: '', email: '', message: ''});
@@ -29,9 +29,9 @@ const ContactMe = () => {
     }
 
     return(
-        <div className="web">
+        <div id='contactForm'>
         <Navigation></Navigation>
-        <div className='container'>
+        <div className={styles.container}>
             <h1>Get In Touch</h1>
             <form onSubmit={SumbitHandler} method='post'>
             <label>Name:</label>
@@ -39,8 +39,8 @@ const ContactMe = () => {
             <label>Email:</label>
             <input type='email' name='email' value={enquiry.email} onChange={onValueChanges}></input>
             <label>Enquiry:</label>
-            <textarea name='message' value={enquiry.message} onChange={onValueChanges}></textarea>
-            <div className='buttonDiv'>
+            <textarea className={styles.textarea} name='message' value={enquiry.message} onChange={onValueChanges}></textarea>
+            <div className={styles.buttonDiv}>
             <button type='Sumbit'><a href='mailto:angelwitchell2001@gmail.com'>Send</a></button>
             </div>
             </form>

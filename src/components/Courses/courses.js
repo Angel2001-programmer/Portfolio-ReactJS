@@ -11,21 +11,26 @@ const courses = props => {
       case 'CodeFirstGirls Music App':
         window.location.href = 'https://github.com/Angel2001-programmer/MG-Music';
         break;
+        
         case 'Calculator':
           window.location.href  = 'https://github.com/Angel2001-programmer/calculator-ReactJS';
         break;
+
         case 'TicTacToe':
           window.location.href = 'https://github.com/Angel2001-programmer/Tic-Tac-Toe-ReactJS';
         break;
+
         case 'WeatherApp':
           window.location.href = 'https://github.com/Angel2001-programmer/WeatherReactJS';
         break;
+
         case 'NoteApp':
           window.location.href = 'https://github.com/Angel2001-programmer/NoteAppReactJS';
           break;
-          default:
-            console.log('Not Found');
-            break;
+        
+        default:
+          console.log('Not Found');
+        break;
     }
   }
 
@@ -39,7 +44,7 @@ const courses = props => {
              onClick={() => clickHandler(home.id)}>
                <div className='cardInfo'>
                  <h2 className='projectTitle'>{home.name}</h2>
-                 <img src={home.image} alt="Preview Image"></img>
+                 <img src={home.image} alt="Preview"></img>
                </div>
              </div>
            </div>

@@ -1,6 +1,14 @@
 *{
   color: white;
 }
+
+html{
+  display: flex;
+  justify-content: center;
+  margin-left: 800px;
+  margin-right: 800px;
+}
+
 .content{
   padding-right: 15px;
   padding-left: 15px;
@@ -11,14 +19,10 @@
   padding: 0;
 }
 
-.web{
-  background-color: #292e36;
-}
-
 body{
-  margin-right: 800px;
-  margin-left: 800px;
   background-color: #20242b;
+  margin-left: 800px;
+  margin-right: 800px;
 }
 
 h1{
@@ -35,26 +39,4 @@ p{
   margin: 0;
   padding: 0;
   font-size: 20px;
-}
-
-.title{
-  padding: 10px;
-  text-align: center;
-}
-
-.courses{
-  padding-bottom: 10px;
-}
-
-.technologies{
-  padding-bottom: 10px;
-}
-
-.projects{
-  padding-bottom: 10px;
-}
-
-.contentV{
-  display: grid;
-  place-items: center;
 }

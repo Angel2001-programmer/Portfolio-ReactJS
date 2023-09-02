@@ -9,7 +9,7 @@ const Tools = props => {
           <Card>
             <div className="Cardcontainer">
             <div className="techCard">
-            <img className="techImg" src={tool.image}></img>
+            <img className="techImg" src={tool.image} alt="a tool a used in personal projects or at work."></img>
             </div>
             <div className="textCard">
             <h1>{tool.name}</h1>

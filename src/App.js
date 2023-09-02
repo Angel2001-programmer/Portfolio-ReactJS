@@ -1,5 +1,5 @@
 import "./App.css";
-import Modal from "./UI/Modal/modal";
+// import Modal from "./UI/Modal/modal";
 import Portfolio from "./components/Portfolio/portfolio";
 import Calculator from "./images/calculatorpreview.PNG";
 import NoteApp from "./images/noteapppreview.PNG";
@@ -29,15 +29,6 @@ function App() {
 
     {
       id: 2,
-      name: "CodeFirstGirls Kickstarter Javascript",
-      image:
-        "https://codefirstgirls.com/wp-content/uploads/2021/05/Featured-image-web-1.png",
-      link: "https://",
-      status: "Not Complete",
-    },
-
-    {
-      id: 3,
       name: "CodeFirstGirls Degree FullStack Developer",
       image:
         "https://codefirstgirls.com/wp-content/uploads/2022/04/CFGDegree-Logo-3.png",

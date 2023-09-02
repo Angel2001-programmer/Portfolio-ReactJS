@@ -7,6 +7,7 @@
     padding: 10px 0 10px 0;
     border-radius: 14px;
     background-color: black;
+    cursor: pointer;
 }
 
 .card{
@@ -20,6 +21,7 @@
     margin: 0;
     padding: 4px;
     text-align: center;
+    color: white;
 }
 
 img{
@@ -29,3 +31,32 @@ img{
     height: 290px;
     width: 400px;
 }
+/* 
+@media screen and (max-width: 2879px) {
+    .coursesContent{
+        grid-template-columns: repeat(2, 0.1fr);
+    }
+}
+
+@media screen and (max-width: 2455px) {
+    .coursesContent{
+        grid-template-columns: repeat(1, 0.1fr);
+    }
+}
+
+
+@media screen and (max-width: 2019px) {
+    .projectTitle{
+        font-size: medium;
+        width: 232px;
+    }
+
+    .cardContainer{
+        width: 240px;
+    }
+
+    img{
+        height: 200px;
+        width: 240px;
+    }
+} */

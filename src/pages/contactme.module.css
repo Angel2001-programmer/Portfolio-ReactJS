@@ -1,18 +1,22 @@
-.web{
-    background-color: #292e36;
-  }
-
   body{
     margin-right: 800px;
     margin-left: 800px;
     background-color: #20242b;
   }
 
+  .ratufa-overlay{
+    display: block;
+  }
+
   .container{
+    display: flex;
+    flex-direction: column;
     background-color: rgb(231, 231, 231);
-    padding: 15px;
     border-radius: 12px;
     min-height: 300px;
+    width: 800px;
+    margin-top: 30px;
+    padding: 15px;
   }
 
   p{
@@ -29,18 +33,24 @@
 
   .container h1{
     display: flex;
-    justify-content: center;
     color: black;
   }
 
   label{
     color: black;
     padding: 2px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 
   input{
+    display: flex;
     padding: 5px;
     color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    height: 56px;
+    font-size: 22px;
   }
 
   form{
@@ -50,9 +60,13 @@
   }
 
   textarea{
+    display: flex;
     resize: vertical;
     max-height: 380px;
     color: black;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 22px;
   }
 
   button{
@@ -64,10 +78,15 @@
     font-size: 20px;
   }
 
+a{
+  text-decoration: none;
+}
+
   .buttonDiv{
     display: flex;
-    justify-content: center;
     padding: 15px;
+    justify-content: center;
+    align-items: center;
   }
 
   button:active{
