@@ -5,8 +5,8 @@ const navigation = () => {
     return(
     <div className="navigation">
         <ul className="list">
-            <li><Link to="/">Home</Link></li> 
-            <li><Link to="contactme">Contact Me</Link></li> 
+            <li><Link to="/Portfolio-ReactJS">Home</Link></li> 
+            <li><Link to="/contactme">Contact Me</Link></li> 
         </ul>
     </div>
     )

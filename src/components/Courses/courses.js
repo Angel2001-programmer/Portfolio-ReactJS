@@ -4,8 +4,10 @@ import "./courses.css";
 
 const courses = props => {
 
-  const clickHandler = (item) => {
+  const clickHandler = (item, e) => {
     let property = props.data.find(obj => obj.id === item);
+
+    console.log(property)
    
     switch(property.name){
       case 'CodeFirstGirls Music App':
@@ -27,7 +29,19 @@ const courses = props => {
         case 'NoteApp':
           window.location.href = 'https://github.com/Angel2001-programmer/NoteAppReactJS';
           break;
+
+        case 'CodeFirstGirls Kickstarter Frontend Development':
+          window.location.href = "/WebDevelopmentPDF"
+        break;
         
+        case 'React - The Complete Guide (incl Hooks, React Router, Redux)':
+          alert('No certicate yet.') 
+        break;
+
+        case 'CodeFirstGirls Degree FullStack Developer':
+            alert('No certicate yet.') 
+        break;
+
         default:
           console.log('Not Found');
         break;
@@ -41,7 +55,7 @@ const courses = props => {
           <div className='content'>
            <div className='cardContainer'>
              <div className='card'
-             onClick={() => clickHandler(home.id)}>
+             onClick={(e) => clickHandler(home.id, e)}>
                <div className='cardInfo'>
                  <h2 className='projectTitle'>{home.name}</h2>
                  <img src={home.image} alt="Preview"></img>

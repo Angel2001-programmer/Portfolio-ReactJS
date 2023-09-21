@@ -8,15 +8,20 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ContactMe from './pages/contactme';
+import WebDevelopmentPDF from './components/WebDevelopmentPDF/WebDevelopmentPDF';
 
 const router = createBrowserRouter([
   {
-  path: "/", 
+  path: "/Portfolio-ReactJS", 
   element: <App/>,
 },
 {
-  path: "contactme", 
+  path: "/contactme", 
   element: <ContactMe/>,
+},
+{
+  path: "/WebDevelopmentPDF", 
+  element: <WebDevelopmentPDF/>
 },
 ]);
 
