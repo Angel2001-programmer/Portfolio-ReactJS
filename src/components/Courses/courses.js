@@ -1,10 +1,11 @@
 import Card from "../../UI/Card/card";
 import React from "react";
+import Modal from "../../UI/Modal/modal"
 import "./courses.css";
 
 const courses = props => {
 
-  const clickHandler = (item, e) => {
+  const clickHandler = (item) => {
     let property = props.data.find(obj => obj.id === item);
 
     console.log(property)
@@ -19,7 +20,6 @@ const courses = props => {
         break;
 
         case 'TicTacToe':
-          window.location.href = 'https://github.com/Angel2001-programmer/Tic-Tac-Toe-ReactJS';
         break;
 
         case 'WeatherApp':
@@ -55,7 +55,7 @@ const courses = props => {
           <div className='content'>
            <div className='cardContainer'>
              <div className='card'
-             onClick={(e) => clickHandler(home.id, e)}>
+             onClick={(e) => clickHandler(home.id)}>
                <div className='cardInfo'>
                  <h2 className='projectTitle'>{home.name}</h2>
                  <img src={home.image} alt="Preview"></img>

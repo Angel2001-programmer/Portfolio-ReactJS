@@ -12,15 +12,31 @@
   }
   
   .heroText{
+    width: 22ch;
+    animation: typing 2s steps(22), blink .2s step-end infinite alternate;
     font-size: 120px;
     text-shadow: 6px 3px 8px rgba(255, 0, 0, 0.521);
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
   }
   
   li{
     text-decoration: none;
     list-style-type: none;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
   }
 
   

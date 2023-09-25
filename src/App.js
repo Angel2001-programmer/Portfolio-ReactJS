@@ -1,5 +1,5 @@
 import "./App.css";
-// import Modal from "./UI/Modal/modal";
+import Modal from "./UI/Modal/modal";
 import Portfolio from "./components/Portfolio/portfolio";
 import Calculator from "./images/calculatorpreview.PNG";
 import NoteApp from "./images/noteapppreview.PNG";
@@ -121,7 +121,7 @@ function App() {
 
   return (
     <Fragment>
-      {/* <Modal/> */}
+      <Modal/>
       <Portfolio 
       data={data} 
       projects={projects} 
