@@ -9,6 +9,7 @@ const Courses = props => {
    
     switch(property.name){
       case 'CodeFirstGirls Music App':
+        alert('No Video on this option.')
         window.location.href = 'https://github.com/Angel2001-programmer/MG-Music';
         break;
         
@@ -17,7 +18,7 @@ const Courses = props => {
           props.onChangeDesc('NONE');
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
-          props.isModal(true);
+          // props.isModal(true);
         break;
 
         case 'TicTacToe':
@@ -25,7 +26,7 @@ const Courses = props => {
           props.onChangeDesc('NONE');
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
-          props.isModal(true);
+          // props.isModal(true);
         break;
 
         case 'WeatherApp':
@@ -33,7 +34,7 @@ const Courses = props => {
           props.onChangeDesc('NONE');
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
-          props.isModal(true);
+          // props.isModal(true);
         break;
 
         case 'NoteApp':
@@ -41,7 +42,7 @@ const Courses = props => {
           props.onChangeDesc('NONE');
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
-          props.isModal(true);
+          // props.isModal(true);
           break;
 
         case 'CodeFirstGirls Kickstarter Frontend Development':
@@ -58,6 +59,7 @@ const Courses = props => {
 
         default:
           console.log('Not Found');
+          alert('That option is not avaliable please try again.')
         break;
     }
   }

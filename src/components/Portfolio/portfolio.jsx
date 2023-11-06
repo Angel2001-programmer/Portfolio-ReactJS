@@ -15,7 +15,7 @@ const Portfolio = props => {
   const [isModal, setIsModal] = useState()
 
   let modal = null; 
-  if(isModal == true){
+  if(isModal === true){
     modal = 
     <div className={styles.modalBG}>
       <div className={styles.modal}>
