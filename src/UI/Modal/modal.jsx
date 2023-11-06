@@ -7,18 +7,18 @@ const Modal = props => {
             <div className={styles.containerLeft}>
             <iframe 
             className={styles.projectVideo} 
-            src="https://www.youtube.com/embed/IJYCDfVfIYM?si=Z6WdMZHP6asyOaWu" 
+            src={props.video} 
             title="YouTube video player" 
-            frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen>
+            allowFullScreen>
             </iframe>
             </div>
             <div className={styles.containerRight}>
-                <h1 className={styles.projectTitle}>Project Title</h1>
-                <sub className={styles.projectInfo}>Project Description</sub>
+                <h1 className={styles.closeModal} onClick={() => props.isClose(false)}>X</h1>
+                <h1 className={styles.projectTitle}>{props.title}</h1>
+                <sub className={styles.projectInfo}>{props.description}</sub>
                 <div className={styles.Repo}>
-                <h2 className={styles.projectRepo}>Find Project Repo Here</h2><a target="_blank" href="https://github.com/Angel2001-programmer/MG-Music"><img className={styles.gh_Logo} src={gh_Logo} alt="Click here to get to Github Repo"/></a>
+                <h2 className={styles.projectRepo}>Find Project Repo Here</h2><a target="_blank" href={props.repo}><img className={styles.gh_Logo} src={gh_Logo} alt="Click here to get to Github Repo"/></a>
                 </div>
             </div>
             </div>

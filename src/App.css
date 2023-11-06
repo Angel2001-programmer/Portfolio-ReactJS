@@ -5,8 +5,9 @@
 html{
   display: flex;
   justify-content: center;
-  margin-left: 800px;
-  margin-right: 800px;
+  /* margin-left: 800px;
+  margin-right: 800px; */
+  overflow-x: hidden;
 }
 
 .content{

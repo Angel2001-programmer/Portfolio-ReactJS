@@ -7,6 +7,7 @@ import TicTacToe from "./images/tictactoe-project.PNG";
 import WeatherApp from "./images/WeatherPreview.PNG";
 import MusicApp from "./images/MusicPreview.PNG";
 import { Fragment } from "react";
+
 function App() {
   let data = [
     {
@@ -41,7 +42,8 @@ function App() {
       id: 0,
       name: "CodeFirstGirls Music App",
       image: MusicApp,
-      link: "https://",
+      video: '',
+      link: "https://github.com/Angel2001-programmer/MG-Music",
       status: "Completed",
     },
 
@@ -49,7 +51,8 @@ function App() {
       id: 1,
       name: "Calculator",
       image: Calculator,
-      link: "#",
+      video: 'https://www.youtube.com/embed/3QB91QGuhAs?si=lI7tuiil5k6ohkej',
+      link: "https://github.com/Angel2001-programmer/calculator-ReactJS",
       status: "Completed",
     },
 
@@ -57,7 +60,8 @@ function App() {
       id: 2,
       name: "TicTacToe",
       image: TicTacToe,
-      link: "#",
+      video: 'https://www.youtube.com/embed/xS5WJvOKDT0?si=Eh4mnfSeWHwLMhDR',
+      link: "https://github.com/Angel2001-programmer/Tic-Tac-Toe-ReactJS",
       status: "Completed",
     },
 
@@ -65,7 +69,8 @@ function App() {
       id: 3,
       name: "WeatherApp",
       image: WeatherApp,
-      link: "#",
+      video: 'https://www.youtube.com/embed/ajdc8AB4TmQ?si=5yizcvWNzZm1T2K5',
+      link: "https://github.com/Angel2001-programmer/WeatherReactJS",
       status: "Completed",
     },
 
@@ -73,7 +78,8 @@ function App() {
       id: 4,
       name: "NoteApp",
       image: NoteApp,
-      link: "#",
+      video: 'https://www.youtube.com/embed/nLL2lYJKJuQ?si=AWlvIX4meBDNyS_T',
+      link: "https://github.com/Angel2001-programmer/NoteAppReactJS",
       status: "Completed",
     },
   ];
@@ -118,10 +124,8 @@ function App() {
         "https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png",
     },
   ];
-
   return (
     <Fragment>
-      <Modal/>
       <Portfolio 
       data={data} 
       projects={projects} 

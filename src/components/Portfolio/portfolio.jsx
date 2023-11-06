@@ -3,12 +3,38 @@ import HeroImage from "../HeroImage/heroImage";
 import Content from "../Content/content";
 import Courses from "../Courses/courses";
 import Tools from "../Tools/Tools";
-import styles from "./portfolio.module.css"
+import styles from "./portfolio.module.css";
+import Modal from "../../UI/Modal/modal"
+import { useState } from 'react';
 
-const portfolio = props => {
+const Portfolio = props => {
+  const [title, setTitle] = useState()
+  const [desc, setDesc] = useState()
+  const [video, setVideo] = useState()
+  const [repo, setRepo] = useState()
+  const [isModal, setIsModal] = useState()
+
+  let modal = null; 
+  if(isModal == true){
+    modal = 
+    <div className={styles.modalBG}>
+      <div className={styles.modal}>
+      <Modal className={styles.modal_Column__ALBIj} 
+        isClose={setIsModal}
+        title={title} 
+        description={desc} 
+        video={video} 
+        repo={repo}/>
+      </div>
+    </div>
+    console.log(title)
+  } else {
+    modal = null;
+  }
 
 return(
     <div className="web">
+      {modal}
       <Navigation/>
       <HeroImage></HeroImage>
       <Content>
@@ -27,7 +53,7 @@ return(
         </div>
         </div>
       </Content>
-      
+
       <Content>
         <div className={styles.contentV}>
           <div className={styles.courses}>
@@ -42,7 +68,7 @@ return(
 
           <div className={styles.projects}>
             <h1 className={styles.title}>Projects</h1>
-            <Courses data={props.projects}></Courses>
+            <Courses data={props.projects} isModal={setIsModal} onChangeTitle={setTitle} onChangeDesc={setDesc} onChangeVideo={setVideo} onChangeRepo={setRepo}/>
           </div>
         </div>
         </Content>
@@ -51,4 +77,4 @@ return(
 )
 }
 
-export default portfolio;
+export default Portfolio;

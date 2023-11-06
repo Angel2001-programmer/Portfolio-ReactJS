@@ -1,13 +1,10 @@
 import Card from "../../UI/Card/card";
 import React from "react";
-import Modal from "../../UI/Modal/modal"
 import "./courses.css";
 
-const courses = props => {
-
+const Courses = props => {
   const clickHandler = (item) => {
     let property = props.data.find(obj => obj.id === item);
-
     console.log(property)
    
     switch(property.name){
@@ -16,18 +13,35 @@ const courses = props => {
         break;
         
         case 'Calculator':
-          window.location.href  = 'https://github.com/Angel2001-programmer/calculator-ReactJS';
+          props.onChangeTitle(property.name);
+          props.onChangeDesc('NONE');
+          props.onChangeVideo(property.video);
+          props.onChangeRepo(property.link);
+          props.isModal(true);
         break;
 
         case 'TicTacToe':
+          props.onChangeTitle(property.name);
+          props.onChangeDesc('NONE');
+          props.onChangeVideo(property.video);
+          props.onChangeRepo(property.link);
+          props.isModal(true);
         break;
 
         case 'WeatherApp':
-          window.location.href = 'https://github.com/Angel2001-programmer/WeatherReactJS';
+          props.onChangeTitle(property.name);
+          props.onChangeDesc('NONE');
+          props.onChangeVideo(property.video);
+          props.onChangeRepo(property.link);
+          props.isModal(true);
         break;
 
         case 'NoteApp':
-          window.location.href = 'https://github.com/Angel2001-programmer/NoteAppReactJS';
+          props.onChangeTitle(property.name);
+          props.onChangeDesc('NONE');
+          props.onChangeVideo(property.video);
+          props.onChangeRepo(property.link);
+          props.isModal(true);
           break;
 
         case 'CodeFirstGirls Kickstarter Frontend Development':
@@ -51,7 +65,7 @@ const courses = props => {
   return (
     <div className="coursesContent">
       {props.data.map((home) => (
-        <Card>
+        <Card key={home.id}>
           <div className='content'>
            <div className='cardContainer'>
              <div className='card'
@@ -70,4 +84,4 @@ const courses = props => {
   );
 };
 
-export default courses;
+export default Courses;

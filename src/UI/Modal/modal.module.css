@@ -5,7 +5,8 @@
 .Column{
     display: flex;
     flex-direction: row;
-    background-color: white;
+    align-items: center;
+    place-content: center;
     border-radius: 35px;
 }
 
@@ -13,12 +14,12 @@
     width: 800px;
     height: 800px;
     background-color: white;
-    border-radius: 35px;
+    border-radius: 35px 0 0 35px;
 }
 
 .containerRight{
-    width: 800px;
     height: 800px;
+    width: 410px;
     background-color: rgb(192, 192, 192);
     border-radius: 0 35px 35px 0;
 }
@@ -26,7 +27,7 @@
 .projectTitle{
     text-align: center;
     color: black;
-    margin-top: 2px;
+    margin-top: 10px;
 }
 
 .projectInfo{
@@ -55,4 +56,13 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.closeModal{
+    color: rgb(207, 0, 0);
+    text-align: end;
+    padding-right: 30px;
+    font-weight: 800;
+    font-size: 35px;
+    cursor: pointer;
 }

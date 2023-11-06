@@ -6,7 +6,7 @@ const Tools = props => {
   return (
     <div className='coursesContent'>
       {props.tools.map((tool) => (
-          <Card>
+          <Card key={tool.id}>
             <div className="Cardcontainer">
             <div className="techCard">
             <img className="techImg" src={tool.image} alt="a tool a used in personal projects or at work."></img>
