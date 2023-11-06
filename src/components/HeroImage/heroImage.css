@@ -4,21 +4,16 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    margin: 0;
-    padding: 0;
-    height: 1190px;
-
+    height: 90vh;
     justify-content: center;
     align-items: center;
   }
   
   .heroText{
-    width: 22ch;
+    width: 19ch;
     animation: typing 2s steps(22), blink .2s step-end infinite alternate;
-    font-size: 120px;
+    font-size: 100px;
     text-shadow: 6px 3px 8px rgba(255, 0, 0, 0.521);
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     white-space: nowrap;
   }
@@ -39,5 +34,3 @@
       border-color: transparent;
     }
   }
-
-  
