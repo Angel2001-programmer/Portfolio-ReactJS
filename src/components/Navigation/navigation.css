@@ -1,5 +1,7 @@
 .navigation{
+    position: relative;
     background-color: #ff00005b;
+    z-index: 5;
 }
 
 .list{
@@ -26,4 +28,25 @@
 
 .list li:hover{
     background-color: #6e00005d;
+}
+
+@media only screen and (max-width: 640px) {
+    .list li a{
+        font-size: 32px;
+    }
+
+    .navigation{
+        width: 90%;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .list li a{
+        font-size: 32px;
+    }
+
+    .navigation{
+        width: 83%;
+    }
 }

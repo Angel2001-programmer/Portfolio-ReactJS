@@ -66,3 +66,90 @@
     font-size: 35px;
     cursor: pointer;
 }
+
+
+@media only screen and (max-width: 640px) {
+    .projectTitle{
+        margin-top: 0;
+    }
+
+    .projectVideo{
+        height: 400px;
+        width: 400px;
+    }
+
+    .Column{
+        position: absolute;
+        height: 400px;
+    }
+
+    .containerLeft{
+        width: 400px;
+        height: 400px;
+    }
+
+    .containerRight{
+        position: relative;
+        width: 260px;
+        height: 415px;
+        top: 7px;
+    }
+
+    .projectRepo{
+        position: fixed;
+        bottom: 16px;
+        font-size: 20px;
+    }
+
+    .gh_Logo{
+        position: absolute;
+        bottom: 0;
+        left: 75px;
+    }
+
+    .projectInfo{
+        position: relative;
+        left: 22px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .projectTitle{
+        margin-top: 0;
+    }
+
+    .projectVideo{
+        height: 400px;
+        width: 400px;
+    }
+
+    .Column{
+        position: relative;
+        height: 400px;
+        right: 100px;
+    }
+
+    .containerLeft{
+        width: 400px;
+        height: 400px;
+    }
+
+    .containerRight{
+        position: relative;
+        width: 260px;
+        height: 415px;
+        top: 7px;
+    }
+
+    .projectRepo{
+        position: fixed;
+        bottom: 16px;
+        font-size: 20px;
+    }
+
+    .gh_Logo{
+        position: absolute;
+        bottom: 0;
+        left: 75px;
+    }
+}

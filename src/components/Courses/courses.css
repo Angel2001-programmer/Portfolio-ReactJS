@@ -35,3 +35,35 @@ img{
 .cardContainer:hover{
     background-color: #1b00005b;
 }
+
+@media only screen and (max-width: 640px) {
+    .coursesContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .coursesContent{
+        display: grid;
+        grid-template-columns: repeat(2, 0.1fr);
+        width: 700px;
+        justify-content: center;
+    }
+
+    .projectTitle{
+        width: 292px;
+    }
+
+    .cardContainer img {
+        width: 300px;
+        height: 227px;
+    }
+
+    .card{
+        width: 300px;
+        height: 50%;
+    }
+  }

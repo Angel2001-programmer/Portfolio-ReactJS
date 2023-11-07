@@ -34,3 +34,33 @@
       border-color: transparent;
     }
   }
+
+  @media only screen and (max-width: 640px) {
+    .heroText{
+      position: relative;
+      margin-right: 40px;
+      font-size: 63px;
+      width: 14ch;
+    }
+
+    .heroImage{
+      width: 640px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .heroText{
+      position: relative;
+      margin-left: 3em;
+      font-size: 80px;
+      width: 18ch;
+    }
+
+    .heroImage{
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }

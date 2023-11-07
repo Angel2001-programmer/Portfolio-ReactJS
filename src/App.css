@@ -5,7 +5,6 @@
 html{
   display: flex;
   justify-content: center;
-  overflow-x: hidden;
 }
 
 .content{
@@ -20,8 +19,6 @@ html{
 
 body{
   background-color: #20242b;
-  margin-left: 800px;
-  margin-right: 800px;
 }
 
 h1{
@@ -38,4 +35,17 @@ p{
   margin: 0;
   padding: 0;
   font-size: 20px;
+}
+
+
+@media only screen and (max-width: 640px) {
+  html {
+    width: 640px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    width: 768px;
+  }
 }

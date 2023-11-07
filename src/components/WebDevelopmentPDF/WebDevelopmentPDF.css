@@ -25,3 +25,14 @@
     height: 100%;
     border: 7px solid rgb(0, 3, 44);
 }
+
+@media only screen and (max-width: 768px) {
+    .mainContent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+        width: 86vh;
+        margin-top: 30px;
+    }
+}
