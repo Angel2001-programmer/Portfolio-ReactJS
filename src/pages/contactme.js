@@ -30,15 +30,15 @@ const ContactMe = () => {
 
     return(
         <div id='contactForm'>
-        <Navigation></Navigation>
+        <Navigation/>
         <div className={styles.container}>
             <h1>Get In Touch</h1>
             <form onSubmit={SumbitHandler} method='post'>
-            <label>Name:</label>
+            <label htmlFor='name'>Name:</label>
             <input type='text' name='name' value={enquiry.name} onChange={onValueChanges}></input>
-            <label>Email:</label>
+            <label htmlFor='email'>Email:</label>
             <input type='email' name='email' value={enquiry.email} onChange={onValueChanges}></input>
-            <label>Enquiry:</label>
+            <label htmlFor='enquiry'>Enquiry:</label>
             <textarea className={styles.textarea} name='message' value={enquiry.message} onChange={onValueChanges}></textarea>
             <div className={styles.buttonDiv}>
             <button type='Sumbit'><a href='mailto:angelwitchell2001@gmail.com'>Send</a></button>

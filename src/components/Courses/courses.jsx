@@ -18,7 +18,7 @@ const Courses = props => {
           props.onChangeDesc('NONE');
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
-          // props.isModal(true);
+          props.isModal(true);
         break;
 
         case 'TicTacToe':
@@ -26,7 +26,7 @@ const Courses = props => {
           props.onChangeDesc('NONE');
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
-          // props.isModal(true);
+          props.isModal(true);
         break;
 
         case 'WeatherApp':
@@ -34,7 +34,7 @@ const Courses = props => {
           props.onChangeDesc('NONE');
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
-          // props.isModal(true);
+          props.isModal(true);
         break;
 
         case 'NoteApp':
@@ -42,7 +42,7 @@ const Courses = props => {
           props.onChangeDesc('NONE');
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
-          // props.isModal(true);
+          props.isModal(true);
           break;
 
         case 'CodeFirstGirls Kickstarter Frontend Development':

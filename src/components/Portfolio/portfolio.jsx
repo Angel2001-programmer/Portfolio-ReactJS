@@ -1,10 +1,10 @@
-import Navigation from "../Navigation/navigation"
 import HeroImage from "../HeroImage/heroImage";
 import Content from "../Content/content";
 import Courses from "../Courses/courses";
 import Tools from "../Tools/Tools";
 import styles from "./portfolio.module.css";
 import Modal from "../../UI/Modal/modal"
+import Navigation from "../Navigation/navigation"
 import { useState } from 'react';
 
 const Portfolio = props => {
@@ -34,8 +34,8 @@ const Portfolio = props => {
 
 return(
     <div className="web">
-      {modal}
       <Navigation/>
+      {modal}
       <HeroImage></HeroImage>
       <Content>
       <div className={styles.content}>
