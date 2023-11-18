@@ -1,6 +1,6 @@
 import Card from "../../UI/Card/card";
 import React from "react";
-import "./courses.css";
+import styles from "./courses.module.css";
 
 const Courses = props => {
   const clickHandler = (item) => {
@@ -65,21 +65,19 @@ const Courses = props => {
   }
 
   return (
-    <div className="coursesContent">
+    <div className={styles.coursesContent}>
       {props.data.map((home) => (
         <Card key={home.id}>
-          <div className='content'>
-           <div className='cardContainer'>
-             <div className='card'
-             onClick={(e) => clickHandler(home.id)}>
-               <div className='cardInfo'>
-                 <h2 className='projectTitle'>{home.name}</h2>
-                 <img src={home.image} alt="Preview"></img>
+           <div className={styles.cardContainer}>
+             <div className={styles.card}
+             onClick={() => clickHandler(home.id)}>
+               <div className={styles.cardInfo}>
+                 <h2 className={styles.projectTitle}>{home.name}</h2>
+                 <img className={styles.toolsIMG} src={home.image} alt="Preview"></img>
                </div>
              </div>
            </div>
            <h3>Status: {home.status}</h3>
-        </div>
         </Card>
       ))}
     </div>

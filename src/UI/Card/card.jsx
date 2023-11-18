@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import "./card.css";
 const card = props  => {
-  return  (<Fragment>
+  return  (<div className="child">
 {props.children}
-  </Fragment>);
+  </div>);
 };
 
 export default card;

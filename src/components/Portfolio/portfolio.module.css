@@ -20,11 +20,6 @@
   .projects{
     padding-bottom: 10px;
   }
-  
-  .contentV{
-    display: grid;
-    place-items: center;
-  }
 
 .normalText{
   font-size: 25px;
@@ -46,30 +41,4 @@
   height: 100%;
   z-index: 500;
   padding: 25px;
-}
-
-@media only screen and (max-width: 640px) {
-    .normalText{
-      position: relative;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-  .normalText{
-    position: relative;
-    margin-left: 9em;
-    margin-right: 8em;
-  }
-
-  .modal{
-    transform: translate(-50%, -50%);
-  }
-}
-
-.modalBG{
-  position: fixed;
-  width: 900vh;
-  height: 1000vh;
 }

@@ -92,3 +92,9 @@ a{
   button:active{
     background-color:rgb(192, 9, 9);
   }
+
+@media all and (max-width: 900px){
+  .container{
+    width: 80vh;
+  }
+}

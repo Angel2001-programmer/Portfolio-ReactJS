@@ -1,12 +1,10 @@
-import { Fragment } from "react";
-
 import "./content.css";
 
 const content = props => {
   return(
-    <Fragment>
+    <div>
       {props.children}
-    </Fragment>
+    </div>
   )
 }
 

@@ -1,7 +1,9 @@
-/* .coursesContent{
-    display: grid;
-    grid-template-columns: repeat(3, 0.1fr);
-} */
+.coursesContent{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    justify-content: center;
+}
 
 .cardContainer{
     padding: 0;

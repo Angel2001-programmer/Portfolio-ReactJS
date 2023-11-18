@@ -23,3 +23,7 @@ img{
     height: 230px;
     width: 400px;
 }
+
+.child{
+    width: 45vh;
+}
