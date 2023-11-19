@@ -34,8 +34,8 @@ const Portfolio = props => {
 
 return(
     <div className="web">
-      <Navigation/>
       {modal}
+      <Navigation/>
       <HeroImage></HeroImage>
       <Content>
       <div className={styles.content}>

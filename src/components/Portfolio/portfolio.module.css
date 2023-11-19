@@ -41,4 +41,5 @@
   height: 100%;
   z-index: 500;
   padding: 25px;
+  z-index: 30;
 }

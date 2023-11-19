@@ -124,13 +124,13 @@ function App() {
     },
   ];
   return (
-    <Fragment>
+    <div id='overlay'>
       <Portfolio 
       data={data} 
       projects={projects} 
       tools={tools}
       />
-    </Fragment>
+    </div>
   );
 }
 
