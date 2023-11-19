@@ -123,13 +123,11 @@ function App() {
     },
   ];
   return (
-    <div id='overlay'>
       <Portfolio 
       data={data} 
       projects={projects} 
       tools={tools}
       />
-    </div>
   );
 }
 
