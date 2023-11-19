@@ -18,7 +18,11 @@ const Modal = props => {
                 <h1 className={styles.projectTitle}>{props.title}</h1>
                 <sub className={styles.projectInfo}>{props.description}</sub>
                 <div className={styles.Repo}>
-                <h2 className={styles.projectRepo}>Find Project Repo Here</h2><a rel="noreferrer" target="_blank" href={props.repo}><img className={styles.gh_Logo} src={gh_Logo} alt="Click here to get to Github Repo"/></a>
+                <div className={styles.projectRepo}>
+                <h2>Find Project Repo Here</h2><a rel="noreferrer" target="_blank" href={props.repo}><img className={styles.gh_Logo} src={gh_Logo} alt="Click here to get to Github Repo"/></a>
+                <h2>Find Project Website Here</h2>
+                <a href={props.deployment} alt="click here to get to website."><p className={styles.link}>Click here</p></a>
+                </div>
                 </div>
             </div>
             </div>

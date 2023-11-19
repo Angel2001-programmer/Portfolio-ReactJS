@@ -15,33 +15,37 @@ const Courses = props => {
         
         case 'Calculator':
           props.onChangeTitle(property.name);
-          props.onChangeDesc('NONE');
+          props.onChangeDesc(property.description);
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
+          props.onChangeDeployment(property.deployment);
           props.isModal(true);
         break;
 
         case 'TicTacToe':
           props.onChangeTitle(property.name);
-          props.onChangeDesc('NONE');
+          props.onChangeDesc(property.description);
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
+          props.onChangeDeployment(property.deployment);
           props.isModal(true);
         break;
 
         case 'WeatherApp':
           props.onChangeTitle(property.name);
-          props.onChangeDesc('NONE');
+          props.onChangeDesc(property.description);
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
+          props.onChangeDeployment(property.deployment);
           props.isModal(true);
         break;
 
         case 'NoteApp':
           props.onChangeTitle(property.name);
-          props.onChangeDesc('NONE');
+          props.onChangeDesc(property.description);
           props.onChangeVideo(property.video);
           props.onChangeRepo(property.link);
+          props.onChangeDeployment(property.deployment);
           props.isModal(true);
           break;
 

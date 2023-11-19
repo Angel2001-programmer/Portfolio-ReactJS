@@ -12,6 +12,7 @@ const Portfolio = props => {
   const [desc, setDesc] = useState()
   const [video, setVideo] = useState()
   const [repo, setRepo] = useState()
+  const [deploy, setDeploy] = useState()
   const [isModal, setIsModal] = useState()
 
   let modal = null; 
@@ -24,7 +25,8 @@ const Portfolio = props => {
         title={title} 
         description={desc} 
         video={video} 
-        repo={repo}/>
+        repo={repo}
+        deployment={deploy}/>
       </div>
     </div>
     console.log(title)
@@ -43,8 +45,8 @@ return(
           <h1 className={styles.title}>Brief Summary</h1>
           <p className={styles.normalText}>
             A little bit about me, Hi I am Angel Im 22 years old, studying
-            ReactJS through Udemy.com. I am also studying a kick-starter course
-            provided by Code First Girls about frontend development. I have
+            ReactJS through Udemy.com. I am also studying a FullStack Degree bootcamp
+            provided by Code First Girls about FullStack Development. I have
             always had a passion for tech since a little kid, computers has
             always fascinated me about how they function, 22 years later and I
             still love computers.
@@ -67,7 +69,14 @@ return(
 
           <div className={styles.projects}>
             <h1 className={styles.title}>Projects</h1>
-            <Courses data={props.projects} isModal={setIsModal} onChangeTitle={setTitle} onChangeDesc={setDesc} onChangeVideo={setVideo} onChangeRepo={setRepo}/>
+            <Courses 
+            data={props.projects} 
+            isModal={setIsModal} 
+            onChangeTitle={setTitle} 
+            onChangeDesc={setDesc} 
+            onChangeVideo={setVideo} 
+            onChangeRepo={setRepo}
+            onChangeDeployment={setDeploy}/>
           </div>
         </Content>
         <form></form>
