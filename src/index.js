@@ -8,6 +8,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import ContactMe from './pages/contactme';
+import Error from './pages/error';
 import WebDevelopmentPDF from './components/WebDevelopmentPDF/WebDevelopmentPDF';
 
 const router = createBrowserRouter([
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
 {
   path: "/WebDevelopmentPDF", 
   element: <WebDevelopmentPDF/>
+},
+{
+  path: "*", 
+  element: <Error/>
 },
 ]);
 
