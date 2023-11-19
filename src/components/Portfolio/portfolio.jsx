@@ -55,7 +55,6 @@ return(
       </Content>
 
       <Content>
-        <div className={styles.contentV}>
           <div className={styles.courses}>
             <h1 className={styles.title}>Courses</h1>
             <Courses data={props.data}></Courses>
@@ -70,7 +69,6 @@ return(
             <h1 className={styles.title}>Projects</h1>
             <Courses data={props.projects} isModal={setIsModal} onChangeTitle={setTitle} onChangeDesc={setDesc} onChangeVideo={setVideo} onChangeRepo={setRepo}/>
           </div>
-        </div>
         </Content>
         <form></form>
       </div>
